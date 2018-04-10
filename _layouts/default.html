@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <header id="internal-navbar" class="container-fluid px-0">
+
+      {% include header.html %}
+
+    </header>
+
+    <div class="container-fluid">
+
+      {{ content }}
+
+    </div>
+
+  </body>
+
+</html>
