@@ -1,0 +1,34 @@
+.navbar {
+  background-image: url("/images/metal.jpg");
+  height: 30vh;
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $danger;
+      }
+    }
+  }
+}
+
+#hero {
+  background-image: url("/images/hero.jpg");
+  height: 70vh;
+}
+
+#services {
+  background: url("/images/blueprint-bg.png") no-repeat;
+  background-size: cover;
+}
+
+#services-header {
+  background: url("/images/blueoverlay-shelves.png") top no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+#fabrication-header {
+  background: url("/images/purpleoverlay-workers.png") no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
