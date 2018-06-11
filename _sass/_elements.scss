@@ -1,24 +1,59 @@
+h2 {
+  font-size: 4.375rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
 .navbar {
   background-image: url("/images/metal.jpg");
-  height: 30vh;
+  height: 25vh;
 
   .navbar-nav {
     .nav-item {
       .nav-link {
         color: $danger;
+        text-transform: uppercase;
+        font-size: 1.375rem;
+        margin-right: 30px;
       }
     }
   }
+
+  .navbar-toggler {
+    color: $danger;
+  }
+}
+
+.btn {
+  font-family: $font-family-serif;
 }
 
 #hero {
   background-image: url("/images/hero.jpg");
-  height: 70vh;
+  height: 75vh;
+  h1 {
+    font-size: 3.4375rem;
+    font-weight: 500;
+  }
 }
 
 #services {
   background: url("/images/blueprint-bg.png") no-repeat;
   background-size: cover;
+}
+
+.serviceCard {
+  border-style: solid;
+  border-color: $primary;
+  border-width: 10px;
+
+  h3 {
+    color: $secondary;
+    font-weight: 700;
+  }
 }
 
 #services-header {
