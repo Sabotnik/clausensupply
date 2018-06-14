@@ -46,10 +46,11 @@ h3 {
 }
 
 .serviceCard {
-  border-style: solid;
-  border-color: $primary;
   border-width: 10px;
-
+  border-radius: 0;
+  border-color: $primary;
+  border-style: solid;
+  padding: 60px 80px;
   h3 {
     color: $secondary;
     font-weight: 700;
