@@ -7,6 +7,10 @@ h3 {
   font-size: 2.25rem;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
 .navbar {
   background-image: url("/images/metal.jpg");
   height: 25vh;
@@ -67,4 +71,14 @@ h3 {
   background: url("/images/purpleoverlay-workers.png") no-repeat;
   background-size: cover;
   min-height: 400px;
+}
+
+#fabrication {
+  p {
+    font-size: 1.5rem;
+  }
+  h4 {
+    color: $secondary;
+    font-weight: 700;
+  }
 }
