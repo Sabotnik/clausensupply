@@ -74,9 +74,13 @@ footer {
   }
 }
 
-#services {
+@mixin blueprint-bg {
   background: url("/images/blueprint-bg.png") no-repeat;
   background-size: cover;
+}
+
+#services {
+  @include blueprint-bg;
 }
 
 .serviceCard {
@@ -91,16 +95,18 @@ footer {
   }
 }
 
-#services-header {
-  background: url("/images/blueoverlay-shelves.png") top no-repeat;
+@mixin header($image-path) {
+  background: url($image-path) top no-repeat;
   background-size: cover;
   min-height: 400px;
 }
 
+#services-header {
+  @include header("/images/blueoverlay-shelves.png");
+}
+
 #fabrication-header {
-  background: url("/images/purpleoverlay-workers.png") no-repeat;
-  background-size: cover;
-  min-height: 400px;
+  @include header("/images/purpleoverlay-workers.png");
 }
 
 #fabrication {
@@ -111,4 +117,16 @@ footer {
     color: $secondary;
     font-weight: 700;
   }
+}
+
+#about {
+    @include blueprint-bg;
+}
+
+#about-header {
+  @include header("/images/purpleoverlay-buildings.png");
+}
+
+#about-middle {
+  background-color: $light-gray;
 }
