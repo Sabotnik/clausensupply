@@ -130,3 +130,19 @@ footer {
 #about-middle {
   background-color: $light-gray;
 }
+
+#product-header {
+  @include header("/images/blueoverlay-shelves.png");
+}
+
+#product-lines {
+  @include blueprint-bg;
+}
+
+#contact-header {
+  @include header("/images/blueoverlay-shelves.png");
+}
+
+#contact-list {
+  background-color: $light-gray;
+}
