@@ -14,121 +14,26 @@ title: Product Lines
 
   </div>
 
-  <div class="col-md-10 offset-md-1 my-4">
+  <div class="col-md-8 offset-md-2 my-4">
 
-    <h3 class="text-secondary"><strong>HVAC Supply Manufacturer Product Lines</strong></h3>
-
-  </div>
-
-  <div class="col-md-5 offset-md-1">
-
-    <ul class="list-unstyled">
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <div class="list-group">
+      <div class="list-group-item flex-column align-items-start active">
+        <div class="d-flex justify-content-between">
+            <h5 class="mb-1">HVAC Supply Manufacturer Product Lines</h5>
         </div>
-      </li>
+      </div>
 
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      {% for product in site.products %}
+      <a href="{{ product.link }}" class="list-group-item list-group-item-action flex-column align-items-start" target="_blank">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">{{ product.name }}</h5>
+          <small>{{ product.link | strip_html }}</small>
         </div>
-      </li>
+        <p class="mb-1">{{ product.content }}</small>
+      </a>
+      {% endfor %}
 
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-
-  <div class="col-md-5">
-
-    <ul class="list-unstyled">
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-      <li class="media my-2">
-        <img class="mr-3" src="/images/logo-placeholder.jpg" alt="Generic placeholder image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">Company Name</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </li>
-
-    </ul>
+    </div>
 
   </div>
 
