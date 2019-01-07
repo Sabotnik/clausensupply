@@ -23,6 +23,9 @@ h4 {
         font-size: 1.375rem;
         margin-right: 30px;
       }
+      .nav-link:hover {
+        color: $light-gray;
+      }
     }
   }
 
@@ -44,12 +47,24 @@ footer {
         font-size: 1.375rem;
       }
     }
+    #footer-address {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $info;
+      }
+    }
   }
   .nav-link {
     color: $danger;
     text-transform: uppercase;
     font-size: 1.375rem;
     margin-right: 30px;
+  }
+  .nav-link:hover {
+    color: $light-gray;
   }
   #copyright {
     background: -webkit-linear-gradient(118deg, #c9c7c7 45%, #ffffff 55%);
@@ -75,8 +90,8 @@ footer {
 }
 
 @mixin blueprint-bg {
-  background: url("/images/blueprint-bg.png") no-repeat;
-  background-size: cover;
+  background: url("/images/blueprint-bg.png"); 
+  background-size: 100%, cover;
 }
 
 #services {
