@@ -1,16 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<div id="navbar-phone-sm" class="d-block d-md-none text-center">
+  <a class="font-weight-bold" href="tel:1-563-242-4994">(563) 242-4994</a>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark">
 
-  <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
-    <img src="/images/brand.png" class="img-fluid" alt="Clausen Supply of Iowa logo" />
-  </a>
-
+  <div id="navbar-phone" class="d-none d-md-block">
+    <a class="font-weight-bold" href="tel:1-563-242-4994">(563) 242-4994</a>
+  </div>
+  
+  <div class="d-none d-lg-block">
+    <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
+      <img src="/images/brand.png" class="img-fluid" alt="Clausen Supply of Iowa logo" />
+    </a>
+  </div>
+  
+  <div class="d-block d-lg-none">
+    <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
+      <img src="/images/logo-mobile.png" class="img-fluid" alt="Clausen Supply of Iowa logo" />
+    </a>
+  </div>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
 
       {% for item in site.data.navigation %}
       <li class="nav-item">

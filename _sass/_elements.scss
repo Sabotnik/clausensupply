@@ -13,8 +13,8 @@ h4 {
 
 .navbar {
   background: url("/images/metal.jpg") bottom no-repeat;
-  height: 240px;
-
+  background-size: cover;
+  min-height: 240px;
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -32,6 +32,46 @@ h4 {
   .navbar-toggler {
     color: $danger;
   }
+}
+#navbar-phone {
+  background: linear-gradient(
+    to right,
+    rgba(white, 1.0),
+    rgba(#c9c7c7, 1.0) 
+  )
+  ;
+  font-size: 1.875em;
+  padding: 10px 30px;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: $info;
+  }
+}
+#navbar-phone-sm {
+  background: linear-gradient(
+    to right,
+    rgba(white, 1.0),
+    rgba(#c9c7c7, 1.0) 
+  )
+  ;
+  font-size: 1.875em;
+  padding: 10px 30px;
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: $info;
+  }
+}
+.navbar-collapse.show {
+  background: rgba($primary, 0.7);
+  padding-left: 15px;
 }
 
 footer {
