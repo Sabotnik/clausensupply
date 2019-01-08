@@ -215,3 +215,9 @@ footer {
 #contact-list {
   background-color: $light-gray;
 }
+
+.carousel-item img {
+  @include media-breakpoint-up(md) {
+    margin: 0 20px;
+  }
+}
