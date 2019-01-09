@@ -24,7 +24,7 @@ h4 {
   background-size: cover;
   min-height: 240px;
   @include media-breakpoint-up(lg) {
-    padding: 0 50px;
+    padding-bottom: 60px;
   }
   .navbar-toggler {
     border-color: $danger;
@@ -45,35 +45,14 @@ h4 {
 .nav-link:hover {
   color: $light-gray;
 }
-#navbar-phone {
+#top-bar {
   background: linear-gradient(
     to right,
     rgba(white, 1.0),
     rgba(#c9c7c7, 1.0) 
-  )
-  ;
+  );
   font-size: 1.875em;
   padding: 10px 30px;
-  position: absolute;
-  top: 0px;
-  right: 90px;
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    color: $info;
-  }
-}
-#navbar-phone-sm {
-  background: linear-gradient(
-    to right,
-    rgba(white, 1.0),
-    rgba(#c9c7c7, 1.0) 
-  )
-  ;
-  font-size: 1.875em;
-  padding: 10px 30px;
-  width: 100%;
   a {
     text-decoration: none;
   }
@@ -104,8 +83,7 @@ footer {
       }
     }
     #footer-address {
-      text-align: center;
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         text-align: right;
       }
       a {
@@ -135,9 +113,16 @@ footer {
   background-image: url("/images/hero.jpg");
   min-height: 75vh;
   h1 {
-    font-size: 3.4375rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    @include media-breakpoint-up(md) {
+      font-size: 2.25rem;
+    }
   }
+}
+
+#inner-hero {
+  background-color: white;
+  padding: 15px 30px;
 }
 
 @mixin blueprint-bg {
