@@ -28,4 +28,13 @@
 	<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
   <script src="/js/lightbox.js"></script>
 
+  {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', '{{ site.google_analytics_key }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  {% endif %}
+
 </head>
